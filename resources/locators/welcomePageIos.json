@@ -1,0 +1,44 @@
+{
+  "8.3.0": {
+    "welcomeMessageText": [
+      "xpath",
+      "//*[starts-with(@text, 'Welcome')]"
+    ],
+    "helpPage1Text": [
+      "name",
+      "turn to play or skip"
+    ],
+    "skipButton": [
+      "name",
+      "skip"
+    ]
+  },
+  "8.1.3": {
+    "welcomeMessageText": [
+      "xpath",
+      "//*[starts-with(@text, 'Welcome')]"
+    ],
+    "helpPage1Text": [
+      "name",
+      "turn to play or skip"
+    ],
+    "skipButton": [
+      "name",
+      "skip"
+    ]
+  },
+  "8.1.2": {
+    "welcomeMessageText": [
+      "xpath",
+      "//*[starts-with(@text, 'Welcome')]"
+    ],
+    "helpPage1Text": [
+      "name",
+      "turn to play or skip"
+    ],
+    "skipButton": [
+      "name",
+      "skip"
+    ]
+  }
+}

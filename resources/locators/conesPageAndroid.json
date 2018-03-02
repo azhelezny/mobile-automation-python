@@ -1,0 +1,156 @@
+{
+  "5.1.0": {
+    "cone": [
+      "xpath",
+      "//*[contains(@text, 'TEXT_TO_CHANGE')]"
+    ],
+    "coneSettings": [
+      "xpath",
+      "//*[*[@text='TEXT_TO_CHANGE']]/android.widget.ImageButton"
+    ],
+    "userSettings": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_drawer_header_drillin')]"
+    ],
+    "userName": [
+      "xpath",
+      ".//*[contains(@resource-id,'device_drawer_header_name')]"
+    ],
+    "linkToCone": [
+      "xpath",
+      "//*[@text = 'Link to this Cone']"
+    ],
+    "unlinkGroup": [
+      "xpath",
+      "//*[@text = 'Unlink Group']"
+
+    ],
+    "unlinkCone": [
+      "xpath",
+      "//*[@text = 'Unlink Cone']"
+
+    ],
+    "coneOnPopup": [
+      "xpath",
+      "//*[@text = 'TEXT_TO_CHANGE']"
+    ],
+    "popUpOK": [
+      "xpath",
+      "//android.widget.Button[@text = 'OK']"
+    ],
+    "masterCone": [
+      "xpath",
+      "//*[contains(@resource-id, 'com.aether.aethercone:id/tunedevice_overflow_cell_master_line')]"
+    ],
+    "slaveLastCone": [
+      "xpath",
+      "//*[contains(@resource-id, 'com.aether.aethercone:id/tunedevice_overflow_cell_last_slave_line')]"
+    ]
+  },
+  "5.0.2": {
+    "cone": [
+      "xpath",
+      "//*[contains(@text, 'TEXT_TO_CHANGE')]"
+    ],
+    "coneSettings": [
+      "xpath",
+      "//*[*[@text='TEXT_TO_CHANGE']]/android.widget.ImageButton"
+    ],
+    "userSettings": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_drawer_header_drillin')]"
+    ],
+    "userName": [
+      "xpath",
+      ".//*[contains(@resource-id,'device_drawer_header_name')]"
+    ],
+    "linkToCone": [
+      "xpath",
+      "//*[@text = 'Link to this Cone']"
+    ],
+    "unlinkGroup": [
+      "xpath",
+      "//*[@text = 'Unlink Group']"
+
+    ],
+    "unlinkCone": [
+      "xpath",
+      "//*[@text = 'Unlink Cone']"
+
+    ],
+    "coneOnPopup": [
+      "xpath",
+      "//*[@text = 'TEXT_TO_CHANGE']"
+    ],
+    "popUpOK": [
+      "xpath",
+      "//android.widget.Button[@text = 'OK']"
+    ],
+    "masterCone": [
+      "xpath",
+      "//*[contains(@resource-id, 'com.aether.aethercone:id/tunedevice_overflow_cell_master_line')]"
+    ],
+    "slaveLastCone": [
+      "xpath",
+      "//*[contains(@resource-id, 'com.aether.aethercone:id/tunedevice_overflow_cell_last_slave_line')]"
+    ]
+  },
+  "4.4.2": {
+    "cone": [
+      "xpath",
+      "//*[contains(@text, 'TEXT_TO_CHANGE')]"
+    ],
+    "coneSettings": [
+      "xpath",
+      "//*[*[contains(@text, 'TEXT_TO_CHANGE')]]/android.widget.ImageButton"
+    ],
+    "userSettings": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_drawer_header_drillin')]"
+    ],
+    "userName": [
+      "xpath",
+      ".//*[contains(@resource-id,'device_drawer_header_name')]"
+    ],
+    "linkToCone": [
+      "xpath",
+      "//*[@text = 'Link to this Cone']"
+    ],
+    "unlinkGroup": [
+      "xpath",
+      "//*[@text = 'Unlink Group']"
+
+    ],
+    "unlinkCone": [
+      "xpath",
+      "//*[@text = 'Unlink Cone']"
+
+    ],
+    "coneOnPopup": [
+      "xpath",
+      "//*[@text = 'TEXT_TO_CHANGE']"
+    ],
+    "popUpOK": [
+      "xpath",
+      "//android.widget.Button[@text = 'OK']"
+    ],
+    "masterCone": [
+      "xpath",
+      "//*[contains(@resource-id, 'com.aether.aethercone:id/tunedevice_overflow_cell_master_line')]"
+    ],
+    "slaveLastCone": [
+      "xpath",
+      "//*[contains(@resource-id, 'com.aether.aethercone:id/tunedevice_overflow_cell_last_slave_line')]"
+    ]
+  },
+  "4.2.2": {
+    "cone": [
+      "xpath",
+      "//*[contains(@text, 'TEXT_TO_CHANGE')]"
+    ],
+    "coneSettings": [
+      "xpath",
+      "//*[*[contains(@text, 'TEXT_TO_CHANGE')]]/android.widget.ImageButton"
+    ]
+  }
+}

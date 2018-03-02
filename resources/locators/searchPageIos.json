@@ -1,0 +1,188 @@
+{
+  "8.3.0": {
+     "searchInput": [
+      "xpath",
+      "//UIATextField[@value = 'search']"
+    ],
+    "likes": [
+      "xpath",
+      "//*[contains(@label, 'Likes')]"
+    ],
+    "back": [
+      "xpath",
+      "//*[contains(@name, 'HeaderBack')]"
+    ],
+    "searchArtist": [
+      "xpath",
+      "//UIATableCell"
+    ],
+    "playThisPlaylist": [
+      "xpath",
+      "//UIAStaticText[@name = 'Play this Playlist']"
+    ],
+     "playlistArtist": [
+      "xpath",
+      "//UIATableCell[(@name!='Play this Playlist') and (@name!='Likes') and not(contains(@name, ' Tracks')) and (@name!=' ')]/UIAStaticText"
+    ],
+    "pageBottom": [
+      "xpath",
+      "//*[contains(@resource-id, 'bottom')]"
+    ],
+     "currentSearchType": [
+      "xpath",
+      "//UIATableGroup"
+    ],
+     "artistsSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'artists']"
+    ],
+     "tracksSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'tracks']"
+    ],
+     "filterSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'TEXT_TO_CHANGE']"
+    ],
+     "filter": [
+      "xpath",
+      "//UIAButton[@name = 'filter' or @name = 'album' or @name = 'artist' or @name = 'track' or @name = 'radio']"
+    ],
+     "filterChooser": [
+      "xpath",
+      "//UIATableView[(UIATableCell/UIAStaticText[@name= 'album'])and(UIATableCell/UIAStaticText[@name= 'artist'])]/UIATableCell/UIAStaticText[@name='TEXT_TO_CHANGE']"
+    ],
+    "resultChooser": [
+      "xpath",
+      "//UIATableView[(UIATableCell/UIAStaticText[@name= 'TEXT_TO_CHANGE'])]"
+    ],
+    "clickFirstResult": [
+      "xpath",
+        "//*/UIATableCell[1]"
+    ]
+  },
+  "8.1.3": {
+     "searchInput": [
+      "xpath",
+      "//UIATextField[@value = 'search']"
+    ],
+    "likes": [
+      "xpath",
+      "//*[contains(@label, 'Likes')]"
+    ],
+    "back": [
+      "xpath",
+      "//*[contains(@name, 'HeaderBack')]"
+    ],
+    "searchArtist": [
+      "xpath",
+      "//UIATableCell"
+    ],
+    "playThisPlaylist": [
+      "xpath",
+      "//UIAStaticText[@name = 'Play this Playlist']"
+    ],
+     "playlistArtist": [
+      "xpath",
+      "//UIATableCell[(@name!='Play this Playlist') and (@name!='Likes') and not(contains(@name, ' Tracks')) and (@name!=' ')]/UIAStaticText"
+    ],
+    "pageBottom": [
+      "xpath",
+      "//*[contains(@resource-id, 'bottom')]"
+    ],
+     "currentSearchType": [
+      "xpath",
+      "//UIATableGroup"
+    ],
+     "artistsSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'artists']"
+    ],
+     "tracksSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'tracks']"
+    ],
+     "filterSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'TEXT_TO_CHANGE']"
+    ],
+     "filter": [
+      "xpath",
+      "//UIAButton[@name = 'filter' or @name = 'album' or @name = 'artist' or @name = 'track' or @name = 'radio']"
+    ],
+     "filterChooser": [
+      "xpath",
+      " //UIATableView[(UIATableCell/UIAStaticText[@name= 'album'])and(UIATableCell/UIAStaticText[@name= 'artist'])]/UIATableCell/UIAStaticText[@name='TEXT_TO_CHANGE']"
+    ],
+    "resultChooser": [
+      "xpath",
+      "//UIATableView[(UIATableCell/UIAStaticText[@name= 'TEXT_TO_CHANGE'])]"
+    ],
+    "clickFirstResult": [
+      "xpath",
+        "//*/UIATableCell[1]"
+    ]
+  },
+  "8.1.2": {
+    "searchInput": [
+      "xpath",
+      "//UIATextField[@value = 'search']"
+    ],
+    "likes": [
+      "xpath",
+      "//*[contains(@label, 'Likes')]"
+    ],
+    "back": [
+      "xpath",
+      "//*[contains(@name, 'HeaderBack')]"
+    ],
+    "searchArtist": [
+      "xpath",
+      "//UIATableCell"
+    ],
+    "playThisPlaylist": [
+      "name",
+      "Play this Playlist"
+    ],
+     "playlistArtist": [
+      "xpath",
+      "//UIATableCell[(@name!='Play this Playlist') and (@name!='Likes') and not(contains(@name, ' Tracks')) and (@name!=' ')]/UIAStaticText"
+    ],
+    "pageBottom": [
+      "xpath",
+      "//*[contains(@resource-id, 'bottom')]"
+    ],
+     "currentSearchType": [
+      "xpath",
+      "//UIATableGroup"
+    ],
+     "artistsSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'artists']"
+    ],
+     "tracksSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'tracks']"
+    ],
+     "filterSearchType": [
+      "xpath",
+      "//UIATableGroup[@name = 'TEXT_TO_CHANGE']"
+    ],
+     "filter": [
+      "xpath",
+      "//UIAButton[@name = 'filter' or @name = 'album' or @name = 'artist' or @name = 'track' or @name = 'radio']"
+    ],
+     "filterChooser": [
+      "xpath",
+      " //UIATableView[(UIATableCell/UIAStaticText[@name= 'album'])and(UIATableCell/UIAStaticText[@name= 'artist'])]/UIATableCell/UIAStaticText[@name='TEXT_TO_CHANGE']"
+    ],
+    "resultChooser": [
+      "xpath",
+      "//UIATableView[(UIATableCell/UIAStaticText[@name= 'TEXT_TO_CHANGE'])]"
+    ],
+    "clickFirstResult": [
+      "xpath",
+        "//*/UIATableCell[1]"
+    ]
+  }
+}

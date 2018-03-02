@@ -1,0 +1,74 @@
+{
+  "5.1.0": {
+    "locLoginTextField": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_email_edittext')]"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_password_edittext')]"
+    ],
+    "locLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_signin_button')]"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'rdio_login_button')]"
+    ]
+  },
+  "5.0.2": {
+    "locLoginTextField": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_email_edittext')]"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_password_edittext')]"
+    ],
+    "locLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_signin_button')]"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'rdio_login_button')]"
+    ]
+  },
+  "4.4.2": {
+    "locLoginTextField": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_email_edittext')]"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_password_edittext')]"
+    ],
+    "locLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'signin_aether_signin_button')]"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'rdio_login_button')]"
+    ]
+  },
+  "4.2.2": {
+    "locLoginTextField": [
+      "xpath",
+      ".//*[@content-desc='aether logo']/../EditText[1]"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//RelativeLayout/EditText[2]"
+    ],
+    "locLoginButton": [
+      "xpath",
+      "//Button[text() = 'SIGN IN']"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//Button[contains(text() 'SIGN IN WITH')]"
+    ]
+  }
+}

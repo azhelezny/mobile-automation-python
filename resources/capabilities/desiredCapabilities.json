@@ -1,0 +1,12 @@
+{
+  "iOS_8.1.2": {
+    "deviceName": "device_name",
+    "newCommandTimeout": 5000,
+    "udid": "device UDID"
+  },
+  "Android_4.4.4": {
+    "deviceName": "device_name",
+    "newCommandTimeout": 5000,
+    "appPackage": "com.aether.aethercone"
+  }
+}

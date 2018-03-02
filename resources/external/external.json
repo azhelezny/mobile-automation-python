@@ -1,0 +1,6 @@
+{
+  "desiredOs" : "Android",
+  "desiredOsVersion" : "4.4",
+  "firmwareVersion" : "FRM000104.02.01.0011.morse",
+  "remoteServerUrl" : "http://localhost:4723/wd/hub"
+}

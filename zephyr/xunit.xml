@@ -1,0 +1,3521 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="nosetests" tests="12" errors="0" failures="0" skip="0" zephyr_project="Cone" zephyr_phase="PVT" zephyr_environment="Bamboo" zephyr_release="1.0" zephyr_fw_ver="FRM000104.99.99.9909">
+	<testcase classname="test_tuned_forward_track" name="test_main" time="46.580" zephyr_tcid="63" return_code="0">
+        <error>something</error>
+        <failure>something else</failure>
+		<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:48:10
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<</tmp/${RANDOM}${RANDOM}.txt>>"
+[com6] <</tmp/3229324940.txt>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [/tmp/3229324940.txt]
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] dbus-monitor --system member='VolumeDown' membe 
+r='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClock 
+wise' member='PlayPause' member='Speech' > /tmp/3229324940.txt &
+[com6] [2] 614
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<<$!>>"
+[com6] <<614>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [614]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:48:11.404981+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t26850222                                             |
+[com6] |Title           |Marry Me                                                     |
+[com6] |Artist          |Train                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |3:07                                                         |
+[com6] |Length          |3:25                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t26850222
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'cs5\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:48:20.167197+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2911795                                              |
+[com6] |Title           |Shackled                                                     |
+[com6] |Artist          |Vertical Horizon                                             |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |5:19                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] rdio://t2911795
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'cs5\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:48:28.252639+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t1265375                                              |
+[com6] |Title           |Let Her Cry                                                  |
+[com6] |Artist          |Hootie & The Blowfish                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:05                                                         |
+[com6] |Length          |5:18                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t1265375
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'cs5\n' | simulate_mcu
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:48:36.507025+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2929723                                              |
+[com6] |Title           |Here's To The Night                                          |
+[com6] |Artist          |Eve 6                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:05                                                         |
+[com6] |Length          |4:09                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t2929723
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'cs5\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:48:44.645345+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2923002                                              |
+[com6] |Title           |Falling In Love Again                                        |
+[com6] |Artist          |Eagle-Eye Cherry                                             |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:05                                                         |
+[com6] |Length          |3:30                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t2923002
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'cs5\n' | simulate_mcu
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:48:52.922457+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t1248630                                              |
+[com6] |Title           |These Hard Times                                             |
+[com6] |Artist          |Matchbox Twenty                                              |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:05                                                         |
+[com6] |Length          |3:47                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] kill -15 614
+[com6] 
+[com6] [2]+  Terminated              dbus-monitor --system member='VolumeDown' member='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClockwise' member='PlayPause' member='Speech' > /tmp/3229324940.txt
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedClockwise/ { 
+N; s/signal.*true/member=EncoderClickedGrossClockwise/g}' /tmp/3229324940.txt >  
+/tmp/3229324940.txt_
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedCounterClock 
+wise/ {N; s/signal.*true/member=EncoderClickedCounterGrossClockwise/g}' /tmp/322 
+9324940.txt_ > /tmp/3229324940.txt
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] cat /tmp/3229324940.txt
+[com6] 
+[com6] signal sender=org.freedesktop.DBus -> dest=:1.60 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+[com6]    string ":1.60"
+[com6] signal sender=:1.3 -> dest=(null destination) serial=451 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=458 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=465 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=472 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=478 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedClockwise
+[com6]    boolean false
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Found action EncoderClickedClockwise
+*DEBUG* Found action EncoderClickedClockwise
+*DEBUG* Found action EncoderClickedClockwise
+*DEBUG* Found action EncoderClickedClockwise
+*DEBUG* Found action EncoderClickedClockwise
+]]></system-out>
+</testcase>
+<testcase classname="test_tuned_reverse_track" name="test_main" time="69.349" zephyr_tcid="5" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:49:07
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<</tmp/${RANDOM}${RANDOM}.txt>>"
+[com6] <</tmp/237722366.txt>>
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [/tmp/237722366.txt]
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] dbus-monitor --system member='VolumeDown' membe 
+r='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClock 
+wise' member='PlayPause' member='Speech' > /tmp/237722366.txt &
+[com6] [2] 727
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<<$!>>"
+[com6] <<727>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [727]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:08.515037+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t1248630                                              |
+[com6] |Title           |These Hard Times                                             |
+[com6] |Artist          |Matchbox Twenty                                              |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:20                                                         |
+[com6] |Length          |3:47                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:17.159002+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2923002                                              |
+[com6] |Title           |Falling In Love Again                                        |
+[com6] |Artist          |Eagle-Eye Cherry                                             |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |3:30                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t2923002
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:25.102522+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2929723                                              |
+[com6] |Title           |Here's To The Night                                          |
+[com6] |Artist          |Eve 6                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |4:09                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t2929723
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:33.058306+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t1265375                                              |
+[com6] |Title           |Let Her Cry                                                  |
+[com6] |Artist          |Hootie & The Blowfish                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |5:18                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] rdio://t1265375
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:40.928224+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2911795                                              |
+[com6] |Title           |Shackled                                                     |
+[com6] |Artist          |Vertical Horizon                                             |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |5:19                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t2911795
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:48.896769+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t26850222                                             |
+[com6] |Title           |Marry Me                                                     |
+[com6] |Artist          |Train                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |3:25                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t26850222
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:49:56.850798+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t2890711                                              |
+[com6] |Title           |Nothing But The Whole Wide World                             |
+[com6] |Artist          |Jakob Dylan                                                  |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |3:48                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t2890711
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:50:04.753257+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t10644296                                             |
+[com6] |Title           |Hey Mama                                                     |
+[com6] |Artist          |Mat Kearney                                                  |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |2:57                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t10644296
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'vs1\n;;;;;vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:50:12.679319+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t4001216                                              |
+[com6] |Title           |Hold On                                                      |
+[com6] |Artist          |Darius Rucker                                                |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:02                                                         |
+[com6] |Length          |4:06                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t4001216
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] kill -15 727
+[com6] 
+[com6] [2]+  Terminated              dbus-monitor --system member='VolumeDown' member='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClockwise' member='PlayPause' member='Speech' > /tmp/237722366.txt
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedClockwise/ { 
+N; s/signal.*true/member=EncoderClickedGrossClockwise/g}' /tmp/237722366.txt > / 
+tmp/237722366.txt_
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedCounterClock 
+wise/ {N; s/signal.*true/member=EncoderClickedCounterGrossClockwise/g}' /tmp/237 
+722366.txt_ > /tmp/237722366.txt
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] cat /tmp/237722366.txt
+[com6] signal sender=org.freedesktop.DBus -> dest=:1.94 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+[com6]    string ":1.94"
+[com6] signal sender=:1.3 -> dest=(null destination) serial=493 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=496 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=502 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=506 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=512 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=515 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=521 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=525 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=531 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=535 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=541 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=544 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=550 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=554 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=562 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] signal sender=:1.3 -> dest=(null destination) serial=566 path=/com/morseproject/tunehardwared; interface=com.morseproject.tunehardwared; member=EncoderClickedCounterClockwise
+[com6]    boolean false
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+*DEBUG* Found action EncoderClickedCounterClockwise
+]]></system-out>
+</testcase>
+<testcase classname="test_tuned_forward_set" name="test_main" time="30.301" zephyr_tcid="6" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:50:26
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<</tmp/${RANDOM}${RANDOM}.txt>>"
+[com6] <</tmp/242408003.txt>>
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [/tmp/242408003.txt]
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] dbus-monitor --system member='VolumeDown' membe 
+r='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClock 
+wise' member='PlayPause' member='Speech' > /tmp/242408003.txt &
+[com6] [2] 892
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<<$!>>"
+[com6] <<892>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [892]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:50:28.279646+0000 / 0x0f                       |
+[com6] |Set             |Group_1: Blue-eyed_soul,Adult_contemporary_music,S           |
+[com6] |Track-ID        |rdio://t4001216                                              |
+[com6] |Title           |Hold On                                                      |
+[com6] |Artist          |Darius Rucker                                                |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:18                                                         |
+[com6] |Length          |4:06                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t4001216
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t2710609
+[com6] rdio://t14489968
+[com6] rdio://t2885535
+[com6] rdio://t1271374
+[com6] rdio://t2272091
+[com6] rdio://t4001216
+[com6] rdio://t10644296
+[com6] rdio://t2890711
+[com6] rdio://t26850222
+[com6] rdio://t2911795
+[com6] rdio://t1265375
+[com6] rdio://t2929723
+[com6] rdio://t2923002
+[com6] rdio://t1248630
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc gross_clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'Cs5\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:50:37.128133+0000 / 0x0f                       |
+[com6] |Set             |Group_2: Crunk,Southern_hip_hop,Dirty_rap,Hardcore           |
+[com6] |Track-ID        |rdio://t33757617                                             |
+[com6] |Title           |Bugatti                                                      |
+[com6] |Artist          |Ace Hood                                                     |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |4:29                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] rdio://t33757617
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+***COMPARE2*** -group_2__crunk_southern_hip_hop_dirty_rap_hardcore- +group_2__crunk_southern_hip_hop_dirty_rap_hardcore+
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc gross_clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'Cs5\n' | simulate_mcu
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:50:45.265085+0000 / 0x0f                       |
+[com6] |Set             |Group_0: Active_rock,Glam_metal,Alternative_metal,           |
+[com6] |Track-ID        |rdio://t31909093                                             |
+[com6] |Title           |Erase My Scars                                               |
+[com6] |Artist          |Evans Blue                                                   |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |3:24                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t31909093
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+***COMPARE2*** -group_0__active_rock_glam_metal_alternative_metal_- +group_0__active_rock_glam_metal_alternative_metal_+
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc gross_clockwise 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'Cs5\n' | simulate_mcu
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:50:53.470342+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] 
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+***COMPARE2*** -group_4__synthpop_contemporary_r_b_lo_fi_music_dan- +group_4__synthpop_contemporary_r_b_lo_fi_music_dan+
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] kill -15 892
+[com6] [2]+  Terminated              dbus-monitor --system member='VolumeDown' member='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClockwise' member='PlayPause' member='Speech' > /tmp/242408003.txt
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedClockwise/ { 
+N; s/signal.*true/member=EncoderClickedGrossClockwise/g}' /tmp/242408003.txt > / 
+tmp/242408003.txt_
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedCounterClock 
+wise/ {N; s/signal.*true/member=EncoderClickedCounterGrossClockwise/g}' /tmp/242 
+408003.txt_ > /tmp/242408003.txt
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] cat /tmp/242408003.txt
+[com6] 
+[com6] signal sender=org.freedesktop.DBus -> dest=:1.143 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+[com6]    string ":1.143"
+[com6] member=EncoderClickedGrossClockwise
+[com6] member=EncoderClickedGrossClockwise
+[com6] member=EncoderClickedGrossClockwise
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Found action EncoderClickedGrossClockwise
+*DEBUG* Found action EncoderClickedGrossClockwise
+*DEBUG* Found action EncoderClickedGrossClockwise
+]]></system-out>
+</testcase>
+<testcase classname="test_tuned_reverse_set" name="test_main" time="29.617" zephyr_tcid="7" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:51:07
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<</tmp/${RANDOM}${RANDOM}.txt>>"
+[com6] <</tmp/2976419784.txt>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [/tmp/2976419784.txt]
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] dbus-monitor --system member='VolumeDown' membe 
+r='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClock 
+wise' member='PlayPause' member='Speech' > /tmp/2976419784.txt &
+[com6] [2] 982
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] echo "<<$!>>"
+[com6] <<982>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [982]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:51:09.005256+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:20                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client lssets
+[com6] group_1__blue_eyed_soul_adult_contemporary_music_s
+[com6] group_2__crunk_southern_hip_hop_dirty_rap_hardcore
+[com6] group_0__active_rock_glam_metal_alternative_metal_
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] group_16__disco_funk_rock_music_jazz_reggae
+[com6] radio_stations
+[com6] headlines
+[com6] group_7__children_s_music_funk_metal_britpop_exper
+[com6] group_18__progressive_metal_folk_metal_death_doom
+[com6] group_3__rapcore_hardcore_punk_rap_rock_hip_hop_mu
+[com6] group_10__blues_rock_progressive_rock_jazz_rock_ne
+[com6] group_8__indie_rock_power_pop_pop_punk_emo_slowcor
+[com6] group_13__garage_rock_psychedelic_rock_post_punk_r
+[com6] group_6__afrobeat_shoegazing_indie_pop_electronic_
+[com6] aether_top_100
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc gross_counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'Vs1\n;;;;;Vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'Vs1\n;;;;;Vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:51:17.732148+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc gross_counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'Vs1\n;;;;;Vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'Vs1\n;;;;;Vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:51:25.717003+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc gross_counterclockwise 2 times with delay 1.5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'Vs1\n;;;;;Vs1\n;;;;;' | simulate_mcu 
+?[A[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# printf -- 'Vs1\n;;;;;Vs1\n;;;;;' | simulate_mcu
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:51:33.678556+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:04                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client ls
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] kill -15 982
+[com6] [2]+  Terminated              dbus-monitor --system member='VolumeDown' member='VolumeUp' member='EncoderClickedClockwise' member='EncoderClickedCounterClockwise' member='PlayPause' member='Speech' > /tmp/2976419784.txt
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedClockwise/ { 
+N; s/signal.*true/member=EncoderClickedGrossClockwise/g}' /tmp/2976419784.txt >  
+/tmp/2976419784.txt_
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sed '/signal.*member=EncoderClickedCounterClock 
+wise/ {N; s/signal.*true/member=EncoderClickedCounterGrossClockwise/g}' /tmp/297 
+6419784.txt_ > /tmp/2976419784.txt
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] cat /tmp/2976419784.txt
+[com6] 
+[com6] signal sender=org.freedesktop.DBus -> dest=:1.167 serial=2 path=/org/freedesktop/DBus; interface=org.freedesktop.DBus; member=NameAcquired
+[com6]    string ":1.167"
+[com6] member=EncoderClickedCounterGrossClockwise
+[com6] member=EncoderClickedCounterGrossClockwise
+[com6] member=EncoderClickedCounterGrossClockwise
+[com6] member=EncoderClickedCounterGrossClockwise
+[com6] member=EncoderClickedCounterGrossClockwise
+[com6] member=EncoderClickedCounterGrossClockwise
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Found action EncoderClickedCounterGrossClockwise
+*DEBUG* Found action EncoderClickedCounterGrossClockwise
+*DEBUG* Found action EncoderClickedCounterGrossClockwise
+*DEBUG* Found action EncoderClickedCounterGrossClockwise
+*DEBUG* Found action EncoderClickedCounterGrossClockwise
+*DEBUG* Found action EncoderClickedCounterGrossClockwise
+]]></system-out>
+</testcase>
+<testcase classname="test_tuned_pause_play" name="test_main" time="18.048" zephyr_tcid="64" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:51:48
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:51:48.434628+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:19                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc play_pause 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'ps5\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:51:55.962339+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Paused                                                       |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:21                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc play_pause 1 times with delay 5 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'ps5\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 5
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:52:03.437500+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t7762880                                              |
+[com6] |Title           |Go Outside                                                   |
+[com6] |Artist          |Cults                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:27                                                         |
+[com6] |Length          |3:23                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] rdio://t7762880
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x42>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x42]
+]]></system-out>
+</testcase>
+<testcase classname="test_speech_request" name="test_main" time="21.840" zephyr_tcid="80" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:52:16
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] /usr/bin/curl -d "key=b2d1bd78eb69418fba2ccd22d 
+1904be0&src='Play tom ford by jay z'&hl=en-us&f=22khz_16bit_mono" -o "/tmp/cmd_o 
+ut.mp3" 'http://api.voicerss.org/?'
+[com6]   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+[com6]                                  Dload  Upload   Total   Spent    Left  Speed
+[com6] 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+[com6] 
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+[com6] 
+100 10733  100 10640  100    93   7950     69  0:00:01  0:00:01 --:--:--  9086
+100 10733  100 10640  100    93   7942     69  0:00:01  0:00:01 --:--:--  9078
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf '4s2\n r' | simulate_mcu
+[com6] 
+[com6] Sleep 2
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] gst-launch-1.0 -q filesrc location='/tmp/cmd_ou 
+t.mp3' ! decodebin ! pulsesink volume=0.03
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:52:34.645182+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t34012713                                             |
+[com6] |Title           |Tom Ford                                                     |
+[com6] |Artist          |Jay Z                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:07                                                         |
+[com6] |Length          |3:09                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] rdio://t34012713
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:52:36.597645+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t34012713                                             |
+[com6] |Title           |Tom Ford                                                     |
+[com6] |Artist          |Jay Z                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:09                                                         |
+[com6] |Length          |3:09                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] rdio://t34012713
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+]]></system-out>
+</testcase>
+<testcase classname="test_ac_adapter_plug_in" name="test_main" time="0.109" zephyr_tcid="83" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:52:48
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+*WARN* Robot does not appear enabled, skip test
+]]></system-out>
+</testcase>
+<testcase classname="test_amp_poweroff" name="test_main" time="18.171" zephyr_tcid="71" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:52:59
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:52:59.797975+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t34012713                                             |
+[com6] |Title           |Tom Ford                                                     |
+[com6] |Artist          |Jay Z                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:32                                                         |
+[com6] |Length          |3:09                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t34012713
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc play_pause 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- 'ps0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] 
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[2]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+]]></system-out>
+</testcase>
+<testcase classname="test_volume_min" name="test_main" time="30.357" zephyr_tcid="72" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:53:32
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client status
+[com6] 
+[com6] +----------------+-------------------------------------------------------------+
+[com6] |Time/Readiness  |2014-07-18T19:53:32.480290+0000 / 0x0f                       |
+[com6] |Set             |Group_4: Synthpop,Contemporary_R&B,Lo-fi_music,Dan           |
+[com6] |Track-ID        |rdio://t34012713                                             |
+[com6] |Title           |Tom Ford                                                     |
+[com6] |Artist          |Jay Z                                                        |
+[com6] |Mode            |Infinite                                                     |
+[com6] |State           |Playing                                                      |
+[com6] |Frozen          |No                                                           |
+[com6] |Position        |0:37                                                         |
+[com6] |Length          |3:09                                                         |
+[com6] |Volume          |0.0998                                                       |
+[com6] +----------------+-------------------------------------------------------------+
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client track
+[com6] 
+[com6] rdio://t34012713
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client set
+[com6] 
+[com6] group_4__synthpop_contemporary_r_b_lo_fi_music_dan
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x42>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x42]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0998
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0998]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x48>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x48]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0707
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0707]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x4e>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x4e]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0500
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0500]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x54>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x54]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0354
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0354]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x5a>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x5a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0251
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0251]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x60>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x60]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0177
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0177]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x66>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x66]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0126
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0126]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] 
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x6c>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x6c]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0089
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0089]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x72>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x72]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0063
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0063]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x78>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x78]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0045
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0045]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x7e>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x7e]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0032
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0032]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x84>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x84]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0022
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0022]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x8a>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x8a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0016
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0016]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x90>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x90]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0011
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0011]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_minus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '-s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x90>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x90]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0011
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0011]
+]]></system-out>
+</testcase>
+<testcase classname="test_volume_max" name="test_main" time="41.236" zephyr_tcid="73" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:54:12
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x90>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x90]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0011
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0011]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x8a>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x8a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0016
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0016]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x84>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x84]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0022
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0022]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x7e>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x7e]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0032
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0032]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x78>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x78]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0045
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0045]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x72>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x72]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0063
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0063]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x6c>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x6c]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0089
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0089]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x66>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x66]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0126
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0126]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x60>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x60]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0177
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0177]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x5a>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x5a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0251
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0251]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x54>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x54]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0354
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0354]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x4e>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x4e]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.0500
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0500]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x48>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x48]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0707
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0707]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x42>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x42]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.0998
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.0998]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x3c>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x3c]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.1410
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.1410]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x36>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x36]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.1991
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.1991]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x30>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x30]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.2813
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.2813]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x2a>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x2a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.3973
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.3973]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x24>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x24]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 0.5612
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.5612]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x1e>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x1e]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 0.7928
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0.7928]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x1a>>[a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x1a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] 
+[com6] Volume: 1.0000
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [1.0000]
+*INFO* Invoking C:\cygwin64\home\ROBOT-01\Github\automation_tests\framework\py_auto\lib\library\cone_in\simulate.pyc vol_plus 1 times with delay 0 seconds
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf -- '+s0\n' | simulate_mcu
+[com6] 
+[com6] Sleep 0
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*WARN* run_cmd_line 'clear_output_buffer' is not True but this will happen anyways due to flow_control_en
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] vol=$(i2cget -y -f 1 0x1B 0x7)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "<<${vol}>>"
+[com6] <<0x1a>>
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [0x1a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume
+[com6] Volume: 1.0000
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [1.0000]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] tune-client volume 0.010
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+]]></system-out>
+</testcase>
+<testcase classname="test_wac_enter_exit_factory_reset" name="test_main" time="67.861" zephyr_tcid="74" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:55:04
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] set flag u
+[com9] 
+[com9] 1405713304:::+)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] set flag n
+[com9] 
+[com9] 1405713304:::+)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation sho[10] w
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713311:::+)
+[com9] 1405713311:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713312:::+)
+[com9] 1405713312:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] ani[7] mation show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713314:::+)
+[com9] 1405713314:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713315:::+)
+[com9] 1405713315:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] No animation running
+[com9] 
+[com9] 1405713317:::-)
+[com9] 1405713317:::-)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] No animation running
+[com9] 
+[com9] 1405713319:::-)
+[com9] 1405713319:::-)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show<2> 
+[com9] No animation running
+[com9] 
+[com9] 1405713321:::-)
+[com9] 1405713321:::-)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713322:::+)
+[com9] 1405713322:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713324:::+)
+[com9] 1405713324:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713325:::+)
+[com9] 1405713325:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713327:::+)
+[com9] 1405713327:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713328:::+)
+[com9] 1405713328:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] anima1405713330: Received: MSG_LINUX_READY ('L')
+[com9] 1405713330: Received: MSG_REQUEST_SENSOR_STATE ('=')
+[com9] tion show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713330:::+)
+[com9] 1405713330:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713332:::+)
+[com9] 1405713332:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713333:::+)
+[com9] 1405713333:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713335:::+)
+[com9] 1405713335:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713336:::+)
+[com9] 1405713336:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713338:::+)
+[com9] 1405713338:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713339:::+)
+[com9] 1405713339:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713341:::+)
+[com9] 1405713341:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 15 (looping)
+[com9] 
+[com9] 1405713343:::+)
+[com9] 1405713343:::+)
+*DEBUG* Return_regex_match found [15]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+[com6] 
+
+[com6] Partition a
+[com6] 
+DEVQRDQQWWDZTAH3EGH6 login: 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+
+[com6] Partition a
+[com6] 
+DEVQRDQQWWDZTAH3EGH6 login: 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] aether
+[com6] Password: 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+[com6] 
+[com6] ?[18t
+[com6] fixterm error
+[com6] [a:aether@DEVQRDQQWWDZTAH3EGH6 ~]$ 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sudo su - root
+[com6] Password:
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+[com6] 
+[com6] ?[18t
+[com6] fixterm error
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] stty rows 80 cols 25
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* New test session or Linux boot, initialize test environment
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] host_=$(hostname); echo --${host_}--
+[com6] 
+[com6] --DEVQRDQQWWDZTAH3EGH6--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [DEVQRDQQWWDZTAH3EGH6]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] temp_=$(env | grep BUILD_VERSION | grep -o -E F 
+RM[[:alnum:]\.]+); echo --${temp_}--
+[com6] --FRM000104.01.01.0681--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [FRM000104.01.01.0681]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] temp_=$(env | grep -o -E PS1=\[[[:alnum:]]+ | g 
+rep -o -E [abdABF]); echo --${temp_}--
+[com6] --a--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [a]
+*INFO* Disabling auto sysupdate functionality
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] systemctl stop nsysupdated
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Successfully logged in
+*INFO* Not already connected to Morse5ghz. Try manual.
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] bash
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EG
+GH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] connect_wifi_conn 
+man "Morse5ghz" "somethin 
+gspecial"
+[com6] bash: [: -eq: unary operator expected
+[com6] [   32.085568] IPv6: ADDRCONF(NETDEV_CHANGE): uap0: link becomes ready
+[com6] [   32.462516] IPv6: ADDRCONF(NETDEV_UP): mlan0: link is not ready
+[com6] [   40.413826] IPv6: ADDRCONF(NETDEV_CHANGE): mlan0: link becomes ready
+[com6] [a:root@DEVQRDQQWWDZTAH3EG
+GH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] exit
+[com6] exit
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] ifconfig mlan0
+[com6] 
+[com6] mlan0     Link encap:Ethernet  HWaddr D0:E7:82:ED:B1:21  
+[com6]           inet addr:172.16.11.41  Bcast:172.16.255.255  Mask:255.255.0.0
+[com6]           inet6 addr: fe80::d2e7:82ff:feed:b121/64 Scope:Link
+[com6]           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+[com6]           RX packets:101 errors:0 dropped:0 overruns:0 frame:0
+[com6]           TX packets:34 errors:0 dropped:0 overruns:0 carrier:0
+[com6]           collisions:0 txqueuelen:1000 
+[com6]           RX bytes:18194 (17.7 KiB)  TX bytes:7988 (7.8 KiB)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [172.16.11.41]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] gdbus call --system -d com.morseproject.Wacd -o 
+ /com/morseproject/wacd/wacd -m com.morseproject.Wacd.Test.SimulateWacSuccess
+[com6] ()
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+]]></system-out>
+</testcase>
+<testcase classname="test_wac_enter_exit_power_on" name="test_main" time="67.199" zephyr_tcid="75" return_code="0">
+	<system-out><![CDATA[
+
+******************************************************************************
+* DUT device ID: DEVQRDQQWWDZTAH3EGH6
+* Current NTP UTC: Jul 18 19:56:26
+* Iteration 1 of 1
+* Last iter time 0 sec, total time 0 sec
+* Last iter msg: 
+* Cumulative iter msg: 
+******************************************************************************
+
+
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] temp_=$(env | grep -o -E PS1=\[[[:alnum:]]+ | g 
+rep -o -E [abdABF]); echo --${temp_}--
+[com6] --a--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [a]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] bootflags -s -p a -f 0x10
+[com6] Success!
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713394:::+)
+[com9] 1405713394:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713395:::+)
+[com9] 1405713395:::+)[9] 
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713397:::+)
+[com9] 1405713397:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] anima[6] tion show
+[com9] Running animation type 12 (one shot)
+[com9] 
+[com9] 1405713399:::+)
+[com9] 1405713399:::+)
+*DEBUG* Return_regex_match found [12]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] No animation running
+[com9] 
+[com9] 1405713397:::-)
+[com9] 1405713397:::-)<5> 
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] No animation running
+[com9] 
+[com9] 1405713399:::-)
+[com9] 1405713399:::-)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animat<2> ion show
+[com9] No animation running
+[com9] 
+[com9] 1405713401:::-)
+[com9] 1405713401:::-)
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713402:::+)
+[com9] 1405713402:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713404:::+)
+[com9] 1405713404:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713405:::+)
+[com9] 1405713405:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713407:::+)
+[com9] 1405713407:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713409:::+)
+[com9] 1405713409:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713410:::+)
+[com9] 1405713410:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713412:::+)
+[com9] 1405713412:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713413:::+)
+[com9] 1405713413:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713415:::+)
+[com9] 1405713415:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713416:::+)
+[com9] 1405713416:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713418:::+)
+[com9] 1405713418:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713420:::+)
+[com9] 1405713420:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 1 (looping)
+[com9] 
+[com9] 1405713421:::+)
+[com9] 1405713421:::+)
+*DEBUG* Return_regex_match found [1]
+[com9]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com9] animation show
+[com9] Running animation type 15 (looping)
+[com9] 
+[com9] 1405713423:::+)
+[com9] 1405713423:::+)
+*DEBUG* Return_regex_match found [15]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+[com6] 
+
+[com6] Partition a
+[com6] 
+DEVQRDQQWWDZTAH3EGH6 login: 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+
+[com6] Partition a
+[com6] 
+DEVQRDQQWWDZTAH3EGH6 login: 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] aether
+[com6] Password: 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+[com6] 
+[com6] ?[18t
+[com6] fixterm error
+[com6] [a:aether@DEVQRDQQWWDZTAH3EGH6 ~]$ 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] sudo su - root
+[com6] Password:
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] 
+[com6] 
+[com6] ?[18t
+[com6] fixterm error
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] stty rows 80 cols 25
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* New test session or Linux boot, initialize test environment
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] host_=$(hostname); echo --${host_}--
+[com6] --DEVQRDQQWWDZTAH3EGH6--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [DEVQRDQQWWDZTAH3EGH6]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] temp_=$(env | grep BUILD_VERSION | grep -o -E F 
+RM[[:alnum:]\.]+); echo --${temp_}--
+[com6] [   24.371050] IPv6: ADDRCONF(NETDEV_CHANGE): uap0: link becomes ready
+[com6] --FRM000104.01.01.0681--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [FRM000104.01.01.0681]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] temp_=$(env | grep -o -E PS1=\[[[:alnum:]]+ | g 
+rep -o -E [abdABF]); echo --${temp_}--
+[com6] --a--
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [a]
+*INFO* Disabling auto sysupdate functionality
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] systemctl stop nsysupdated
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] printf "[[${?}]]\n"
+[com6] [[0]]
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*INFO* Successfully logged in
+*INFO* Not already connected to Morse5ghz. Try manual.
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] bash
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EG
+GH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] connect_wifi_conn 
+man "Morse5ghz" "somethin 
+gspecial"
+[com6] bash: [: -eq: unary operator expected
+[com6] [   29.336046] IPv6: ADDRCONF(NETDEV_UP): mlan0: link is not ready
+[com6] [   29.691826] IPv6: ADDRCONF(NETDEV_UP): mlan0: link is not ready
+[com6] [   37.626287] IPv6: ADDRCONF(NETDEV_CHANGE): mlan0: link becomes ready
+[com6] [a:root@DEVQRDQQWWDZTAH3EG
+GH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] exit
+[com6] exit
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] ifconfig mlan0
+[com6] 
+[com6] mlan0     Link encap:Ethernet  HWaddr D0:E7:82:ED:B1:21  
+[com6]           inet addr:172.16.11.41  Bcast:172.16.255.255  Mask:255.255.0.0
+[com6]           inet6 addr: fe80::d2e7:82ff:feed:b121/64 Scope:Link
+[com6]           UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+[com6]           RX packets:301 errors:0 dropped:0 overruns:0 frame:0
+[com6]           TX packets:41 errors:0 dropped:0 overruns:0 carrier:0
+[com6]           collisions:0 txqueuelen:1000 
+[com6]           RX bytes:41030 (40.0 KiB)  TX bytes:8836 (8.6 KiB)
+[com6] 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+*DEBUG* Return_regex_match found [172.16.11.41]
+[com6]   *** SERIAL PORT READ BUFFER FLUSHED ***
+[com6] gdbus call --system -d com.morseproject.Wacd -o 
+ /com/morseproject/wacd/wacd -m com.morseproject.Wacd.Test.SimulateWacSuccess
+[com6] ()
+[com6] [a:root@DEVQRDQQWWDZTAH3EGH6 ~]# 
+]]></system-out>
+</testcase>
+</testsuite>

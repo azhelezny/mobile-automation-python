@@ -1,0 +1,16 @@
+{
+  "cones": [
+    {
+      "name": "cone's name",
+      "host": "cone's address",
+      "userName": "the name of user",
+      "userPass": "user's password"
+    },
+    {
+      "name": "second cone's name",
+      "host": "second cone's address",
+      "userName": "the name of second user",
+      "userPass": "second user's password"
+    }
+  ]
+}

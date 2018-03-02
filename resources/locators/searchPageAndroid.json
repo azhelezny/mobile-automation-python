@@ -1,0 +1,213 @@
+{
+  "5.1.0": {
+    "searchInput": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_text_area')]"
+    ],
+    "likes": [
+      "xpath",
+      "//*[@text = 'Likes']"
+    ],
+    "playThisPlaylist": [
+      "xpath",
+      "//*[@text = 'Play this Playlist']"
+    ],
+    "playThisAlbum": [
+      "xpath",
+      "//*[@text = 'Play this Album']"
+    ],
+    "playlistArtist": [
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_creator')]"
+    ],
+    "playlistTrack": [
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "currentSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_sticky_header_textview')]"
+    ],
+    "nextSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview')]"
+    ],
+    "artistsSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview') and (@text = 'artists')]"
+    ],
+    "tracksSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview') and (@text = 'tracks')]"
+    ],
+    "searchAlbum": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_name_field')]"
+    ],
+    "searchArtist": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_creator_field')]"
+    ],
+    "pageBottom": [
+      "xpath",
+      "//*[contains(@resource-id, 'bottom')]"
+    ],
+    "okPopUpAlert": [
+      "xpath",
+      "//*[contains(@resource-id, 'popup_okay_button')]"
+    ],
+    "learnMorePopUpAlert": [
+      "xpath",
+      "//*[contains(@resource-id, 'popup_cancel_button')]"
+    ],
+    "clickFirstResult": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_image')][1]"
+    ],
+    "clickXResult": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_image')]['TEXT_TO_CHANGE']"
+    ]
+  },
+  "5.0.2": {
+    "searchInput": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_text_area')]"
+    ],
+    "likes": [
+      "xpath",
+      "//*[@text = 'Likes']"
+    ],
+    "playThisPlaylist": [
+      "xpath",
+      "//*[@text = 'Play this Playlist']"
+    ],
+    "playThisAlbum": [
+      "xpath",
+      "//*[@text = 'Play this Album']"
+    ],
+    "playlistArtist": [
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_creator')]"
+    ],
+    "playlistTrack": [
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "currentSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_sticky_header_textview')]"
+    ],
+    "nextSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview')]"
+    ],
+    "artistsSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview') and (@text = 'artists')]"
+    ],
+    "tracksSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview') and (@text = 'tracks')]"
+    ],
+    "searchAlbum": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_name_field')]"
+    ],
+    "searchArtist": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_creator_field')]"
+    ],
+    "pageBottom": [
+      "xpath",
+      "//*[contains(@resource-id, 'bottom')]"
+    ],
+    "okPopUpAlert": [
+      "xpath",
+      "//*[contains(@resource-id, 'popup_okay_button')]"
+    ],
+    "learnMorePopUpAlert": [
+      "xpath",
+      "//*[contains(@resource-id, 'popup_cancel_button')]"
+    ],
+    "clickFirstResult": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_image')][1]"
+    ],
+    "clickXResult": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_image')]['TEXT_TO_CHANGE']"
+    ]
+  },
+  "4.4.2": {
+    "searchInput": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_text_area')]"
+    ],
+    "likes": [
+      "xpath",
+      "//*[@text = 'Likes']"
+    ],
+    "playThisPlaylist": [
+      "xpath",
+      "//*[@text = 'Play this Playlist']"
+    ],
+    "playThisAlbum": [
+      "xpath",
+      "//*[@text = 'Play this Album']"
+    ],
+    "playlistArtist": [
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_creator')]"
+    ],
+    "playlistTrack": [
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "currentSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_sticky_header_textview')]"
+    ],
+    "nextSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview')]"
+    ],
+    "artistsSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview') and (@text = 'artists')]"
+    ],
+    "tracksSearchType": [
+      "xpath",
+      "//*[contains(@resource-id, 'search_header_textview') and (@text = 'tracks')]"
+    ],
+    "searchAlbum": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_name_field')]"
+    ],
+    "searchArtist": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_creator_field')]"
+    ],
+    "pageBottom": [
+      "xpath",
+      "//*[contains(@resource-id, 'bottom')]"
+    ],
+    "okPopUpAlert": [
+      "xpath",
+      "//*[contains(@resource-id, 'popup_okay_button')]"
+    ],
+    "learnMorePopUpAlert": [
+      "xpath",
+      "//*[contains(@resource-id, 'popup_cancel_button')]"
+    ],
+    "clickFirstResult": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_image')][1]"
+    ],
+    "clickXResult": [
+      "xpath",
+      "//*[contains(@resource-id, 'tuneobject_cell_image')]['TEXT_TO_CHANGE']"
+    ]
+  }
+}
+

@@ -1,0 +1,68 @@
+{
+  "8.3.0": {
+    "equalizerButton": [
+      "name",
+      "Equalizer"
+    ],
+    "coneName": [
+      "xpath",
+      "//UIAScrollView[1]/UIAStaticText[1]"
+    ],
+    "eqSet": [
+      "xpath",
+      "//UIATableCell[@name = 'TEXT_TO_CHANGE']"
+    ],
+    "back": [
+      "name",
+      "clear back"
+    ],
+    "coneNameInLan": [
+      "xpath",
+      "//UIATableCell[@name = 'TEXT_TO_CHANGE']"
+    ]
+  },
+  "8.1.3": {
+    "equalizerButton": [
+      "name",
+      "Equalizer"
+    ],
+    "coneName": [
+      "xpath",
+      "//UIAScrollView[1]/UIAStaticText[1]"
+    ],
+    "eqSet": [
+      "xpath",
+      "//UIATableCell[@name = 'TEXT_TO_CHANGE']"
+    ],
+    "back": [
+      "name",
+      "clear back"
+    ],
+    "coneNameInLan": [
+      "xpath",
+      "//UIATableCell[@name = 'TEXT_TO_CHANGE']"
+    ]
+  },
+  "8.1.2": {
+    "equalizerButton": [
+      "name",
+      "Equalizer"
+    ],
+    "coneName": [
+      "xpath",
+      "//UIAScrollView[1]/UIAStaticText[1]"
+    ],
+    "eqSet": [
+      "xpath",
+      "//UIATableCell[@name = 'TEXT_TO_CHANGE']"
+    ],
+    "back": [
+      "name",
+      "clear back"
+    ],
+    "coneNameInLan": [
+      "xpath",
+      "//UIATableCell[@name = 'TEXT_TO_CHANGE']"
+    ]
+  }
+}

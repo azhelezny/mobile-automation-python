@@ -1,0 +1,56 @@
+{
+  "8.3.0": {
+    "locLoginTextField": [
+      "xpath",
+      "//UIATextField"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//UIASecureTextField"
+    ],
+    "locLoginButton": [
+      "name",
+      "SIGN IN"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'rdio_login_button')]"
+    ]
+  },
+  "8.1.3": {
+    "locLoginTextField": [
+      "xpath",
+      "//UIATextField"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//UIASecureTextField"
+    ],
+    "locLoginButton": [
+      "name",
+      "SIGN IN"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'rdio_login_button')]"
+    ]
+  },
+  "8.1.2": {
+    "locLoginTextField": [
+      "xpath",
+      "//UIATextField"
+    ],
+    "locPasswordTextField": [
+      "xpath",
+      "//UIASecureTextField"
+    ],
+    "locLoginButton": [
+      "name",
+      "SIGN IN"
+    ],
+    "locRdioLoginButton": [
+      "xpath",
+      "//*[contains(@resource-id, 'rdio_login_button')]"
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "5.1.0": {
+    "welcomeMessageText": [
+      "xpath",
+      "//*[contains(@resource-id, 'welcome_person_welcome')]"
+    ]
+  },
+  "5.0.2": {
+    "welcomeMessageText": [
+      "xpath",
+      "//*[contains(@resource-id, 'welcome_person_welcome')]"
+    ]
+  },
+  "4.4.2": {
+    "welcomeMessageText": [
+      "xpath",
+      "//*[contains(@resource-id, 'welcome_person_welcome')]"
+    ]
+  },
+  "4.2.2": {
+    "welcomeMessageText": [
+      "xpath",
+      "//android.widget.TextView"
+    ]
+  }
+}

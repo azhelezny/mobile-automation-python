@@ -1,0 +1,62 @@
+{
+  "5.1.0": {
+    "equalizerButton": [
+      "xpath",
+      "//*[@text = 'Equalizer']"
+    ],
+    "coneName": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_details_cone_name_textview')]"
+    ],
+    "eqState": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_details_eq_state')]"
+    ],
+    "eqSet": [
+      "xpath",
+      "//*[@text = 'TEXT_TO_CHANGE']"
+    ]
+  },
+  "5.0.2": {
+    "equalizerButton": [
+      "xpath",
+      "//*[@text = 'Equalizer']"
+    ],
+    "coneName": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_details_cone_name_textview')]"
+    ],
+    "eqState": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_details_eq_state')]"
+    ],
+    "eqSet": [
+      "xpath",
+      "//*[@text = 'TEXT_TO_CHANGE']"
+    ]
+  },
+    "4.4.2": {
+    "equalizerButton": [
+      "xpath",
+      "//*[@text = 'Equalizer']"
+    ],
+    "coneName": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_details_cone_name_textview')]"
+    ],
+    "eqState": [
+      "xpath",
+      "//*[contains(@resource-id, 'device_details_eq_state')]"
+    ],
+    "eqSet": [
+      "xpath",
+      "//*[@text = 'TEXT_TO_CHANGE']"
+    ]
+  },
+  "4.2.2": {
+    "equalizerButton": [
+      "xpath",
+      "//*[@text = 'Equalizer']"
+    ]
+  }
+}

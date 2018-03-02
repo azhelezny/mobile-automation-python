@@ -1,0 +1,200 @@
+{
+  "5.1.0": {
+    "playBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button') and @content-desc='paused']"
+    ],
+    "pauseBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button') and @content-desc='playing']"
+    ],
+    "playPauseBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button')]"
+    ],
+    "currentTrackName":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_name')]"
+    ],
+    "currentTrackArist":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_creator')]"
+    ],
+    "currentTrackLikeBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_like')]"
+    ],
+    "nextTrackBtn":[
+      "xpath",
+      "//*[@text = 'Next Track']"
+    ],
+    "nextTrackSimilarToTxt":[
+      "xpath",
+      "//*[contains(@text, 'Similar to')]"
+    ],
+    "playingFrom":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_attribution_text')]"
+    ],
+    "somethingDifferent":[
+      "xpath",
+      "//*[contains(@text, 'Something Different')]"
+    ],
+    "conesListBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'my_cones_button')]"
+    ],
+    "searchBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'now_playing_search_button')]"
+    ],
+    "previousTracks":[
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "nextTracks":[
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "previousArtists":[
+      "xpath",
+      "//android.widget.RelativeLayout/*[contains(@resource-id, 'tunetrack_cell_creator') and not(starts-with(@text, 'Similar to')) and not (@text='')]"
+    ],
+    "volumeButton":[
+      "xpath",
+      "//*[contains(@resource-id, 'toolbar_volume_button')]"
+    ]
+  },
+  "5.0.2": {
+    "playBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button') and @content-desc='paused']"
+    ],
+    "pauseBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button') and @content-desc='playing']"
+    ],
+    "playPauseBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button')]"
+    ],
+    "currentTrackName":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_name')]"
+    ],
+    "currentTrackArist":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_creator')]"
+    ],
+    "currentTrackLikeBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_like')]"
+    ],
+    "nextTrackBtn":[
+      "xpath",
+      "//*[@text = 'Next Track']"
+    ],
+    "nextTrackSimilarToTxt":[
+      "xpath",
+      "//*[contains(@text, 'Similar to')]"
+    ],
+    "playingFrom":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_attribution_text')]"
+    ],
+    "somethingDifferent":[
+      "xpath",
+      "//*[contains(@text, 'Something Different')]"
+    ],
+    "conesListBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'my_cones_button')]"
+    ],
+    "searchBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'now_playing_search_button')]"
+    ],
+    "previousTracks":[
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "nextTracks":[
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "previousArtists":[
+      "xpath",
+      "//android.widget.RelativeLayout/*[contains(@resource-id, 'tunetrack_cell_creator') and not(starts-with(@text, 'Similar to')) and not (@text='')]"
+    ],
+    "volumeButton":[
+      "xpath",
+      "//*[contains(@resource-id, 'toolbar_volume_button')]"
+    ]
+  },
+    "4.4.2": {
+    "playBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button') and @content-desc='paused']"
+    ],
+    "pauseBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button') and @content-desc='playing']"
+    ],
+    "playPauseBtn": [
+      "xpath",
+      "//*[contains(@resource-id, 'play_pause_button')]"
+    ],
+    "currentTrackName":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_name')]"
+    ],
+    "currentTrackArist":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_creator')]"
+    ],
+    "currentTrackLikeBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_like')]"
+    ],
+    "nextTrackBtn":[
+      "xpath",
+      "//*[@text = 'Next Track']"
+    ],
+    "nextTrackSimilarToTxt":[
+      "xpath",
+      "//*[contains(@text, 'Similar to')]"
+    ],
+    "playingFrom":[
+      "xpath",
+      "//*[contains(@resource-id, 'currenttrack_cell_attribution_text')]"
+    ],
+    "somethingDifferent":[
+      "xpath",
+      "//*[contains(@text, 'Something Different')]"
+    ],
+    "conesListBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'my_cones_button')]"
+    ],
+    "searchBtn":[
+      "xpath",
+      "//*[contains(@resource-id, 'search_button')]"
+    ],
+    "previousTracks":[
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "nextTracks":[
+      "xpath",
+      "//*[contains(@resource-id, 'tunetrack_cell_text')]"
+    ],
+    "previousArtists":[
+      "xpath",
+      "//android.widget.RelativeLayout/*[contains(@resource-id, 'tunetrack_cell_creator') and not(starts-with(@text, 'Similar to')) and not (@text='')]"
+    ],
+    "volumeButton":[
+      "xpath",
+      "//*[contains(@resource-id, 'toolbar_volume_button')]"
+    ]
+  }
+}

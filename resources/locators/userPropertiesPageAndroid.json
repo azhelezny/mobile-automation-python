@@ -1,0 +1,26 @@
+{
+  "5.1.0": {
+    "logoutButton": [
+      "xpath",
+      ".//*[contains(@resource-id,'settings_logout_button')]"
+    ]
+  },
+  "5.0.2": {
+    "logoutButton": [
+      "xpath",
+      ".//*[contains(@resource-id,'settings_logout_button')]"
+    ]
+  },
+  "4.4.2": {
+    "logoutButton": [
+      "xpath",
+      ".//*[contains(@resource-id,'settings_logout_button')]"
+    ]
+  },
+  "4.2.2": {
+    "logoutButton": [
+      "xpath",
+      ".//*[contains(@resource-id,'settings_logout_button')]"
+    ]
+  }
+}

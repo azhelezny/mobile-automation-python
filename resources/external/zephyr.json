@@ -1,0 +1,17 @@
+{
+  "userName": "zephyr user name",
+  "userPassword": "zephyr user name",
+  "host": "zephyr host",
+  "project": "zephyr project",
+  "release": "zephyr release",
+  "build": "001",
+  "testCasesRoot": [
+    "Mobile application",
+    "Automated"
+  ],
+  "phase": [
+    "Test Mobile Test",
+    "Mobile application",
+    "Automated"
+  ]
+}

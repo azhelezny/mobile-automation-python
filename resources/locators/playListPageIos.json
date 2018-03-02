@@ -1,0 +1,226 @@
+{
+  "8.3.0": {
+    "playBtn": [
+      "name",
+      "now_playing.play"
+    ],
+    "pauseBtn": [
+      "name",
+      "now_playing.pause"
+    ],
+    "playPauseBtn": [
+      "xpath",
+      "//*[(@name = 'now_playing.play') or (@name = 'now_playing.pause')]"
+    ],
+    "currentTrackName":[
+      "xpath",
+      "//*[@name = 'now_playing.now_playing_currrent']/UIAStaticText[1]"
+    ],
+    "currentTrackArist":[
+      "xpath",
+      "//*[@name = 'now_playing.now_playing_currrent']/UIAStaticText[2]"
+    ],
+    "nextTrackBtn":[
+      "name",
+      "Next Track"
+    ],
+    "nextTrackSkipsLeft":[
+      "xpath",
+      "//*[starts-with(@value, 'You have')]"
+    ],
+    "nextTrackSimilarToTxt":[
+      "xpath",
+      "//*[contains(@value, 'Similar to')]"
+    ],
+    "playingFrom":[
+      "xpath",
+      "//*[starts-with(@name, 'playing from')]"
+    ],
+    "searchBtn":[
+      "xpath",
+      "//*[contains(@name, 'search_btn')]"
+    ],
+    "previousTracks":[
+      "xpath",
+      "//*[starts-with(@name, 'now_playing.past_track')]/UIAStaticText"
+    ],
+    "nextTracks":[
+      "xpath",
+      "//*[starts-with(@name, 'now_playing.future_track')]/UIAStaticText"
+    ],
+    "volumeButton":[
+      "xpath",
+      "//*[contains(@name, 'volume_btn')]"
+    ],
+    "increaseVolumeButton":[
+      "name",
+      "vol plus inactive"
+    ],
+    "decreaseVolumeButton":[
+      "name",
+      "vol minus inactive"
+    ],
+    "somethingDifferent":[
+      "xpath",
+      "//*[(@name = 'release to play something different') or (@name = 'pull to play something different')]"
+    ],
+    "acceptAlert":[
+      "xpath",
+      "//*[contains(@name, 'OK')]"
+    ],
+    "learnMoreAlert":[
+      "xpath",
+      "//*[contains(@name, 'Learn More')]"
+    ]
+  },
+  "8.1.3": {
+    "playBtn": [
+      "name",
+      "now_playing.play"
+    ],
+    "pauseBtn": [
+      "name",
+      "now_playing.pause"
+    ],
+    "playPauseBtn": [
+      "xpath",
+      "//*[(@name = 'now_playing.play') or (@name = 'now_playing.pause')]"
+    ],
+    "currentTrackName":[
+      "xpath",
+      "//*[@name = 'now_playing.now_playing_currrent']/UIAStaticText[1]"
+    ],
+    "currentTrackArist":[
+      "xpath",
+      "//*[@name = 'now_playing.now_playing_currrent']/UIAStaticText[2]"
+    ],
+    "nextTrackBtn":[
+      "name",
+      "Next Track"
+    ],
+    "nextTrackSkipsLeft":[
+      "xpath",
+      "//*[starts-with(@value, 'You have')]"
+    ],
+    "nextTrackSimilarToTxt":[
+      "xpath",
+      "//*[contains(@value, 'Similar to')]"
+    ],
+    "playingFrom":[
+      "xpath",
+      "//*[starts-with(@name, 'playing from')]"
+    ],
+    "searchBtn":[
+      "xpath",
+      "//*[contains(@name, 'search_btn')]"
+    ],
+    "previousTracks":[
+      "xpath",
+      "//*[starts-with(@name, 'now_playing.past_track')]/UIAStaticText"
+    ],
+    "nextTracks":[
+      "xpath",
+      "//*[starts-with(@name, 'now_playing.future_track')]/UIAStaticText"
+    ],
+    "volumeButton":[
+      "xpath",
+      "//*[contains(@name, 'volume_btn')]"
+    ],
+    "increaseVolumeButton":[
+      "name",
+      "vol plus inactive"
+    ],
+    "decreaseVolumeButton":[
+      "name",
+      "vol minus inactive"
+    ],
+    "somethingDifferent":[
+      "xpath",
+      "//*[(@name = 'release to play something different') or (@name = 'pull to play something different')]"
+    ],
+    "acceptAlert":[
+      "xpath",
+      "//*[contains(@name, 'OK')]"
+    ],
+    "learnMoreAlert":[
+      "xpath",
+      "//*[contains(@name, 'Learn More')]"
+    ]
+  },
+  "8.1.2": {
+    "playBtn": [
+      "name",
+      "now_playing.play"
+    ],
+    "pauseBtn": [
+      "name",
+      "now_playing.pause"
+    ],
+    "playPauseBtn": [
+      "xpath",
+      "//*[(@name = 'now_playing.play') or (@name = 'now_playing.pause')]"
+    ],
+    "currentTrackName":[
+      "xpath",
+      "//*[@name = 'now_playing.now_playing_currrent']/UIAStaticText[1]"
+    ],
+    "currentTrackArist":[
+      "xpath",
+      "//*[@name = 'now_playing.now_playing_currrent']/UIAStaticText[2]"
+    ],
+    "nextTrackBtn":[
+      "name",
+      "Next Track"
+    ],
+      "nextTrackSkipsLeft":[
+      "xpath",
+      "//*[contains(@value, 'skips left')]"
+    ],
+    "nextTrackSimilarToTxt":[
+      "xpath",
+      "//*[contains(@value, 'Similar to')]"
+    ],
+    "playingFrom":[
+      "xpath",
+      "//*[starts-with(@name, 'playing from')]"
+    ],
+    "searchBtn":[
+      "xpath",
+      "//*[contains(@name, 'search_btn')]"
+    ],
+    "previousTracks":[
+      "xpath",
+      "//*[starts-with(@name, 'now_playing.past_track')]/UIAStaticText"
+    ],
+    "nextTracks":[
+      "xpath",
+      "//*[starts-with(@name, 'now_playing.future_track')]/UIAStaticText"
+    ],
+    "volumeButton":[
+      "xpath",
+      "//*[contains(@name, 'volume_btn')]"
+    ],
+    "increaseVolumeButton":[
+      "name",
+      "vol plus inactive"
+    ],
+    "decreaseVolumeButton":[
+      "name",
+      "vol minus inactive"
+    ],
+    "somethingDifferent":[
+      "xpath",
+      "//*[(@name = 'release to play something different') or (@name = 'pull to play something different')]"
+    ],
+    "acceptAlert":[
+      "xpath",
+      "//*[contains(@name, 'OK')]"
+    ],
+    "learnMoreAlert":[
+      "xpath",
+      "//*[contains(@name, 'Learn More')]"
+    ]
+
+
+  }
+}
